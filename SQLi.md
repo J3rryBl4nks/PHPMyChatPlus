@@ -1,3 +1,6 @@
+CVE-2020-9265
+
+
 The PHP MyChat Plus 1.98 application is vulnerable to SQL Injection without authentication through the "deluser.php" page.
 
 Capture the request through burpsuite:
